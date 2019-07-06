@@ -15,7 +15,7 @@ export class WeatherService {
   dailyForecast() {
     return this._http
       .get(
-        `http://samples.openweathermap.org/data/2.5/history/city?q=Warren,OH&appid=${
+        `http://api.openweathermap.org/data/2.5/history/city?q=Warren,OH&appid=${
           this.APIkey
         }`
       )
